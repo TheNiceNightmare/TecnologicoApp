@@ -49,11 +49,23 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="View\**" />
+	  <Compile Remove="View\**" />
+	  <EmbeddedResource Remove="View\**" />
+	  <MauiCss Remove="View\**" />
+	  <MauiXaml Remove="View\**" />
+	  <None Remove="View\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" Version="5.3.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="View\" />
+	  <MauiXaml Update="Views\WelcomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
