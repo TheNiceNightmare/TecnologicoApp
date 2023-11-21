@@ -14,7 +14,7 @@
                 Margin="0,30,0,0"
                 HeightRequest="100"
                 HorizontalOptions="Center"
-                Source="login.png"
+                Source="Usuario.png"
                 WidthRequest="100" />
             <StackLayout Padding="40" Spacing="30">
                 <Entry
